@@ -8,7 +8,7 @@ function genericOnClick2(info, tab) {
 	chrome.tabs.executeScript(tab.id,{"allFrames":true, "file":"checkall2.js"});
 }
 
-var pat = "http://allegro.pl/myaccount/watch.php";
+var pat = "http://allegro.pl/myaccount/watch.php*";
 var id = chrome.contextMenus.create({
 	"documentUrlPatterns":[pat], 
 	"title": "Allegro - obserwowane", 
